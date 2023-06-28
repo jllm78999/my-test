@@ -1,0 +1,317 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    /* padding: 0; */
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-button: #fb5181;
+    --secondary-button: #c3fded;
+    --accent: #fb5181;
+    --navbar-height: 60px;
+    border-radius: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    
+}
+
+.left{
+    text-align: center;
+    font-size: large;
+    font-weight: bolder;
+}
+
+body {
+    font-family: 'Geologica';
+   
+}
+
+/* Navbar Styling */
+.navbar-holder {
+    height: var(--navbar-height);
+    position: sticky;
+    top: 0;
+}
+
+.navbar {
+    height: 100%;
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 40px;
+    width: 20px;
+}
+
+
+.logo img {
+    height: 100%;
+    object-fit: contain;
+    
+}
+
+.nav {
+    height: 100%;
+}
+
+.menu {
+    height: 100%;
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    gap: 20px;
+}
+
+.menu-item {
+    height: 100%;
+}
+
+.menu-link {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    
+}
+
+.menu-link:hover{
+    background: blue;
+}
+.menu-link.active {
+    color: var(--accent);
+}
+
+.action-buttons {
+    height: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.action-button {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    padding: 0 20px;
+}
+
+.action-button:nth-child(1) {
+    background-color: var(--text);
+    background: #fb5181;
+}
+
+.action-button:nth-child(2) {
+    background-color: var(--accent);
+    
+   
+}
+
+/* Main Styling */
+.main {
+    height: 30vh;
+    width: 90vw,1200px;
+    
+    
+}
+
+/* Footer Styling */
+.footer {
+    margin: auto;
+    padding: 50px 0 0 0;
+    background-color: yellow
+}
+
+.row {
+    width: min(90vw, 1200px);
+    margin: auto;
+    display: flex;
+    flex: 1;
+    padding-bottom: 50px;
+}
+
+.col-4 {
+    flex: 1;
+}
+
+.content {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.content-title {
+    font-weight: 400;
+    font-size: 22px;
+    color: var(--text);
+}
+
+.content-text {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 300;
+}
+
+.content-links {
+    padding: 0;
+    list-style-type: none;
+}
+
+.content-link{
+    margin-bottom: 10px;
+    
+}
+
+.content-link a {
+    text-decoration: none;
+    height: 40px;
+    color: black;
+    font-size: 14px;
+}
+
+.content-link a i{
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.content-link a:hover {
+    color: var(--accent);
+}
+
+.subscribe-form input{
+    display: block;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    outline: 2px solid transparent;
+    border: none;
+    
+
+}
+
+.subscribe-form input:focus,.pass:focus {
+    outline-color: var(--accent);
+}
+
+
+.btn-subscribe {
+    display: block;
+    margin-top: 10px;
+    background-color: var(--text);
+    border: solid;
+    outline: none;
+    color:red;
+    padding: 10px 16px;
+    cursor: pointer;
+    
+}
+
+
+
+header{
+    background-color: #c3fded;
+    background-size: 50px;
+
+
+}
+/*Main styling*/
+.page-header{
+   background: var(--text); 
+    color:white;
+    padding-block: 60px;
+    display: flex;
+    align-items: center;
+    
+    /* align-items:center;*/
+    justify-content: center;
+    text-align: center;
+    
+
+}
+
+.page-header h1{
+    font-size: 4rem;
+    margin-bottom: 6px;
+}
+.wrapper{
+    width: 90vw,1200px;
+   
+    margin-inline: auto;
+    margin-left: auto;
+    margin-block: auto;
+}
+.auth-card{
+width: 500px;
+margin-inline:auto ;
+padding: 50px;
+background-color: rgba(255,255,0.6);
+
+}
+/*auth styling*/
+.input-holder{
+    border: #fb5181;
+    margin-bottom: 14px;
+    display: block;
+
+}
+.input-holder label{
+    display: block;
+    margin-bottom: 6px;
+}
+
+.pass{
+    display: block;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    outline: 2px solid;
+    border: black;
+    margin: auto;
+
+
+}
+label{
+    margin: auto;
+    text-align: center;
+
+}
+.top{
+    margin: auto;
+    text-align: center;
+    padding-bottom: 5px;
+
+}
+.para{
+    margin: auto;
+    text-align: center;
+
+}
+.btn-login{
+    margin: auto;
+    text-align: center;
+    display: block;
+    padding-top: 10px;
+    padding-right: 120px,120px,120px;
+    border-radius: 10px;
+    margin-top: 10px;
+    background-color: var(--text);
+    border: solid;
+    outline: none;
+    color:red;
+    padding: 10px 16px;
+    cursor: pointer;
+    
+    
+
+    
+}
+
+
+
